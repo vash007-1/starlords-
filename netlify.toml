@@ -1,0 +1,8 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "framework": "vite",
+  "functionsDirectory": "api",
+  "outputDirectory": "dist",
+  "packagePath": "./package.json"
+}

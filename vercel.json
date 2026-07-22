@@ -1,0 +1,10 @@
+# Vercel Build Configuration
+
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm ci",
+  "env": {
+    "VITE_OPENWEATHER_API_KEY": "@openweather_api_key"
+  }
+}
