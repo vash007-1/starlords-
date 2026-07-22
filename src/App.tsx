@@ -7,6 +7,7 @@ import NavigationDrawer from './components/organisms/NavigationDrawer'
 import HomePage from './pages/HomePage'
 import TodoPage from './pages/TodoPage'
 import WeatherPage from './pages/WeatherPage'
+import JokesPage from './pages/JokesPage'
 import './App.css'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/todo" element={<TodoPage />} />
             <Route path="/weather" element={<WeatherPage />} />
+            <Route path="/jokes" element={<JokesPage />} />
           </Routes>
         </main>
       </div>

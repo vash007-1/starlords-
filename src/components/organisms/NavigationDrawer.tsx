@@ -1,5 +1,5 @@
 import React from 'react'
-import { X, Home, CheckSquare, Cloud, LogOut } from 'lucide-react'
+import { X, Home, CheckSquare, Cloud, Laugh, LogOut } from 'lucide-react'
 import { useUIStore, useThemeStore, useAuthStore } from '../../stores'
 import { useNavigate } from 'react-router-dom'
 import Button from '../atoms/Button'
@@ -19,7 +19,8 @@ const NavigationDrawer: React.FC = () => {
   const menuItems: NavItem[] = [
     { icon: <Home size={20} />, label: 'الصفحة الرئيسية', href: '/' },
     { icon: <CheckSquare size={20} />, label: 'قائمة المهام', href: '/todo' },
-    { icon: <Cloud size={20} />, label: 'الطقس', href: '/weather' }
+    { icon: <Cloud size={20} />, label: 'الطقس', href: '/weather' },
+    { icon: <Laugh size={20} />, label: 'النكات', href: '/jokes' }
   ]
 
   const handleNavigation = (href: string) => {
