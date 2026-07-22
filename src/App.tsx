@@ -1,9 +1,12 @@
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useThemeStore, useUIStore, useAuthStore } from '@stores/*'
 import AppBar from '@components/organisms/AppBar'
 import NavigationDrawer from '@components/organisms/NavigationDrawer'
 import HomePage from '@pages/HomePage'
+import TodoPage from '@pages/TodoPage'
+import WeatherPage from '@pages/WeatherPage'
 import './App.css'
 
 function App() {
@@ -27,6 +30,8 @@ function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/todo" element={<TodoPage />} />
+            <Route path="/weather" element={<WeatherPage />} />
           </Routes>
         </main>
       </div>
