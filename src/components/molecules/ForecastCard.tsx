@@ -1,6 +1,6 @@
 import React from 'react'
 import { Cloud, CloudRain, Sun, Wind, Droplets } from 'lucide-react'
-import { DayForecast } from '@stores/*'
+import { DayForecast } from '../../stores'
 
 interface ForecastCardProps {
   day: DayForecast

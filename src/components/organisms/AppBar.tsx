@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu, Search, Grid3x3 } from 'lucide-react'
-import { useUIStore, useThemeStore } from '@stores/*'
-import Button from '@components/atoms/Button'
+import { useUIStore, useThemeStore } from '../stores'
+import Button from '../atoms/Button'
 
 const AppBar: React.FC = () => {
   const { toggleDrawer } = useUIStore()
@@ -37,10 +37,11 @@ const AppBar: React.FC = () => {
           <Button
             variant="ghost"
             size="icon"
+            onClick={toggleTheme}
             className="rounded-full"
-            aria-label="عرض شبكة"
+            aria-label="تبديل الوضع"
           >
-            <Grid3x3 size={24} />
+            {isDark ? '☀️' : '🌙'}
           </Button>
         </div>
       </div>

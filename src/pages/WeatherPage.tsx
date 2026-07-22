@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Cloud, CloudRain, Sun, Wind, Droplets, Eye, Gauge, MapPin, Search, Heart, Trash2 } from 'lucide-react'
-import { useWeatherStore } from '@stores/*'
-import Button from '@components/atoms/Button'
-import Input from '@components/atoms/Input'
-import WeatherCard from '@components/molecules/WeatherCard'
-import ForecastCard from '@components/molecules/ForecastCard'
+import { useWeatherStore } from '../../stores'
+import Button from '../atoms/Button'
+import Input from '../atoms/Input'
+import WeatherCard from '../molecules/WeatherCard'
+import ForecastCard from '../molecules/ForecastCard'
 
 const WeatherPage: React.FC = () => {
   const { weather, isLoading, error, savedLocations, fetchWeather, addSavedLocation, removeSavedLocation } = useWeatherStore()

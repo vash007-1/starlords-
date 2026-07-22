@@ -1,7 +1,7 @@
 import React from 'react'
-import { Trash2, Edit2, CheckCircle2, Circle } from 'lucide-react'
-import { useTodoStore, TodoItem } from '@stores/*'
-import Button from '@components/atoms/Button'
+import { Trash2, CheckCircle2, Circle } from 'lucide-react'
+import { useTodoStore, TodoItem } from '../../stores'
+import Button from '../atoms/Button'
 
 interface TodoItemProps {
   todo: TodoItem

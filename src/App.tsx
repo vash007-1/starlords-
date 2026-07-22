@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useEffect } from 'react'
-import { useThemeStore, useUIStore, useAuthStore } from '@stores/*'
-import AppBar from '@components/organisms/AppBar'
-import NavigationDrawer from '@components/organisms/NavigationDrawer'
-import HomePage from '@pages/HomePage'
-import TodoPage from '@pages/TodoPage'
-import WeatherPage from '@pages/WeatherPage'
+import { useThemeStore, useUIStore, useAuthStore } from './stores'
+import AppBar from './components/organisms/AppBar'
+import NavigationDrawer from './components/organisms/NavigationDrawer'
+import HomePage from './pages/HomePage'
+import TodoPage from './pages/TodoPage'
+import WeatherPage from './pages/WeatherPage'
 import './App.css'
 
 function App() {

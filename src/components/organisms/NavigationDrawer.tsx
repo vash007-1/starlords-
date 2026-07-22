@@ -1,8 +1,8 @@
 import React from 'react'
+import { X, Home, CheckSquare, Cloud, LogOut } from 'lucide-react'
+import { useUIStore, useThemeStore, useAuthStore } from '../../stores'
 import { useNavigate } from 'react-router-dom'
-import { CheckSquare, Cloud, Home, LogOut } from 'lucide-react'
-import { useUIStore, useThemeStore, useAuthStore } from '@stores/*'
-import Button from '@components/atoms/Button'
+import Button from '../atoms/Button'
 
 interface NavItem {
   icon: React.ReactNode

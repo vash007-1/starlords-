@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Plus, Trash2, CheckCircle2, Circle, AlertCircle } from 'lucide-react'
-import { useTodoStore } from '@stores/*'
-import Button from '@components/atoms/Button'
-import Input from '@components/atoms/Input'
-import TodoItem from '@components/molecules/TodoItem'
+import { Plus, Trash2, AlertCircle } from 'lucide-react'
+import { useTodoStore } from '../../stores'
+import Button from '../atoms/Button'
+import Input from '../atoms/Input'
+import TodoItem from '../molecules/TodoItem'
 
 const TodoPage: React.FC = () => {
   const { todos, addTodo, loadTodos, clearCompleted, getTodos } = useTodoStore()
@@ -131,7 +131,7 @@ const TodoPage: React.FC = () => {
             variant="danger"
             size="sm"
             onClick={clearCompleted}
-            className="مل"
+            className="ml-auto"
           >
             <Trash2 size={16} className="ml-1" />
             حذف المكتملة
